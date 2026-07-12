@@ -111,6 +111,13 @@
     return { windows: "Windows", mac: "macOS", linux: "Linux", android: "Android" }[os] || "your system";
   }
 
+  function formatSize(bytes) {
+    const mb = bytes / 1024 / 1024;
+    if (mb >= 1) return `${mb.toFixed(1)} MB`;
+    const kb = bytes / 1024;
+    return `${kb.toFixed(0)} KB`;
+  }
+
   function buildWidget({ release, best, confident, all, os, arch }) {
     const wrap = document.createElement("div");
     wrap.id = "ged-widget";
@@ -135,7 +142,7 @@
       const row = document.createElement("a");
       row.className = "ged-row";
       row.href = asset.browser_download_url;
-      row.textContent = `${asset.name}  (${(asset.size / 1024 / 1024).toFixed(1)} MB)`;
+      row.textContent = `${asset.name}  (${formatSize(asset.size)})`;
       if (best && asset.id === best.id) row.classList.add("ged-row-best");
       panel.appendChild(row);
     });
