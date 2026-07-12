@@ -61,8 +61,7 @@ repo you're currently viewing. Full details in [PRIVACY.md](PRIVACY.md).
   
 ## Support
 
-If this saved you time, a ⭐ on the repo helps more than you'd think —
-and if you'd like to support development directly, reach out.
+If this saved you time, a star on the repo helps more than you'd think,and if you'd like to support development directly, reach out.
 
 ## License
 
