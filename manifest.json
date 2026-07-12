@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Easy Download",
+  "version": "1.0.0",
+  "description": "Adds a one-click download button on GitHub repos that automatically picks the right release file for your operating system.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "host_permissions": [
+    "https://api.github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
