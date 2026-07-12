@@ -58,6 +58,11 @@ repo you're currently viewing. Full details in [PRIVACY.md](PRIVACY.md).
 - GitHub limits how many lookups an IP address can make per hour without
   logging in, so on rare occasions the button may not appear until that
   resets.
+  
+## Support
+
+If this saved you time, a ⭐ on the repo helps more than you'd think —
+and if you'd like to support development directly, reach out.
 
 ## License
 
